@@ -1,0 +1,25 @@
+opam-version: "2.0"
+maintainer: "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors: ["Martin Jambon"]
+description: "Equivalent of the C preprocessor for OCaml programs"
+homepage: "https://github.com/mjambon/cppo"
+dev-repo: "git+https://github.com/mjambon/cppo.git"
+bug-reports: "https://github.com/mjambon/cppo/issues"
+license: "BSD-3-Clause"
+
+build: [
+  ["jbuilder" "subst"] {pinned}
+  ["jbuilder" "build" "-p" "cppo" "-j" jobs]
+  ["jbuilder" "runtest" "-p" name] {with-test}
+]
+depends: [
+  "ocaml"
+  "jbuilder" {build & >= "1.0+beta17"}
+  "OCaml-RiscV"
+]
+install: [["opam-installer" "--prefix=%{prefix}%/riscv-sysroot" "cppo.install"]]
+url {
+	src: "https://github.com/mjambon/cppo/archive/v1.6.4.tar.gz"
+	checksum: "f7a4a6a0e83b76562b45db3a93ffd204"
+}
+synopsis: ""
