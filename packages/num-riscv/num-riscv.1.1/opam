@@ -22,12 +22,12 @@ depends: [
   "OCaml-RiscV"
   "ocaml"  {= "4.07.0"} 
 ]
-extra-files: [["findlib-install.patch.in" "md5=4239ae31352247893bbe9ec437e9657a"]]
+extra-files: ["findlib-install.patch.in" "md5=4239ae31352247893bbe9ec437e9657a"]
 conflicts: [ "base-num" ]
 substs: [ "findlib-install.patch" ]
 patches: [ "findlib-install.patch" ]
 url {
-	archive: "https://github.com/ocaml/num/archive/v1.1.tar.gz"
+	src: "https://github.com/ocaml/num/archive/v1.1.tar.gz"
 	checksum: "710cbe18b144955687a03ebab439ff2b"
 }
 synopsis: ""
