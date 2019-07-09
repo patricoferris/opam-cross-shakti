@@ -5,7 +5,10 @@ authors: "KC Sivaramakrishnan <kc@kcsrk.info>"
 license: "LGPL v2.1"
 homepage: "https://github.com/kayceesrk/riscv-ocaml/tree/4.07+cross"
 substs: [ "riscv.conf" ]
-depends: [ "ocaml" "ocamlfind" ]
+depends: [ 
+	"ocaml" {= "4.07.0"} 
+	"ocamlfind"
+]
 build: [
 	["sh" "./configure" "--target" "riscv64-unknown-linux-gnu" "-prefix" "%{prefix}%/riscv-sysroot" "-no-ocamldoc" "-no-debugger" "-target-bindir" "%{prefix}%/riscv-sysroot/bin"]
 	["sh" "./build.sh"]
@@ -18,7 +21,7 @@ install: [
 url {
   src: "https://github.com/SaiVK/OCaml-RiscV/archive/v1.tar.gz"
   checksum: [
-    "md5=01453dcc5d2a5d1a3f24ea87f1ca10ea"
-    "sha512=7ef5b35eb933e10899e708203b09cd4f3205e3db7b024aa478595cea391a487d799dc8175d56cbcbb19c97cccd679b585b75e061a9d539be3acdfd17027d5ff3"
+    "md5=673608d63e05d420873eafbca51641b6"
+    "sha512=5649716c55284ee88f10606be908495ed5b6a624e14422958b4852bd545bd8cc041902d938bef883f49e9ecc78bd263a52debc21adc97aa98387dbcd94376299"
   ]
 }
