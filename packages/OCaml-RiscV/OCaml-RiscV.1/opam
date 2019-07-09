@@ -1,0 +1,24 @@
+opam-version: "2.0"
+synopsis: "Ocaml to RiscV Cross Compiler."
+maintainer: "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors: "KC Sivaramakrishnan <kc@kcsrk.info>"
+license: "LGPL v2.1"
+homepage: "https://github.com/kayceesrk/riscv-ocaml/tree/4.07+cross"
+substs: [ "riscv.conf" ]
+depends: [ "ocaml" "ocamlfind" ]
+build: [
+	["sh" "./configure" "--target" "riscv64-unknown-linux-gnu" "-prefix" "%{prefix}%/riscv-sysroot" "-no-ocamldoc" "-no-debugger" "-target-bindir" "%{prefix}%/riscv-sysroot/bin"]
+	["sh" "./build.sh"]
+]
+install: [
+	["cp" "%{prefix}%/bin/ocamlrun" "byterun"]
+	[make "install"]
+	["sh" "./install.sh"]
+]
+url {
+  src: "https://github.com/SaiVK/OCaml-RiscV/archive/v1.tar.gz"
+  checksum: [
+    "md5=01453dcc5d2a5d1a3f24ea87f1ca10ea"
+    "sha512=7ef5b35eb933e10899e708203b09cd4f3205e3db7b024aa478595cea391a487d799dc8175d56cbcbb19c97cccd679b585b75e061a9d539be3acdfd17027d5ff3"
+  ]
+}
