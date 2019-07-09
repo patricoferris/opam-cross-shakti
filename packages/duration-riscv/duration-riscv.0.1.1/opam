@@ -11,7 +11,7 @@ bug-reports: "https://github.com/hannesm/duration/issues"
 license: "ISC"
 
 depends: [
-  "ocaml-riscv"
+  "OCaml-RiscV"
   "ocamlfind" {build}
   "ocamlbuild" {build}
   "topkg" {build}
