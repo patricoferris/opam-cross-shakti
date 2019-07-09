@@ -7,7 +7,10 @@ dev-repo: "git+https://github.com/janestreet/parsexp.git"
 doc: "https://ocaml.janestreet.com/ocaml-core/latest/doc/parsexp/index.html"
 license: "MIT"
 build: [
-  ["dune" "build" "-x" "riscv" "-p" "parsexp" "-j" jobs]
+  ["dune" "build" "-p" "parsexp" "-j" jobs]
+]
+install: [
+  ["dune" "install" "--prefix" "%{prefix}%/riscv-sysroot" "-p" "parsexp"]
 ]
 depends: [
   "ocaml" {>= "4.04.2"}
