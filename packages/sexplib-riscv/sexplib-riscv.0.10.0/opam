@@ -1,0 +1,27 @@
+opam-version: "2.0"
+description: "Library for serializing OCaml values to and from S-expressions
+
+Part of Jane Street's Core library
+The Core suite of libraries is an industrial strength alternative to
+OCaml's standard library that was developed by Jane Street, the
+largest industrial user of OCaml."
+maintainer:   "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors: ["Jane Street Group, LLC <opensource@janestreet.com>"]
+homepage: "https://github.com/janestreet/sexplib"
+bug-reports: "https://github.com/janestreet/sexplib/issues"
+dev-repo: "git+https://github.com/janestreet/sexplib.git"
+license: "Apache-2.0"
+build: [
+  ["jbuilder" "build" "-x" "riscv" "-p" "sexplib"]
+]
+depends: [
+  "jbuilder" {build & >= "1.0+beta12"}
+  "num-riscv"
+  "OCaml-RiscV"
+  "ocaml" {= "4.07.0"} 
+]
+url {
+	src: "https://ocaml.janestreet.com/ocaml-core/v0.10/files/sexplib-v0.10.0.tar.gz"
+	checksum: "b8f5db21a2b19aadc753c6e626019068"
+}
+synopsis: ""
