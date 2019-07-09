@@ -1,0 +1,22 @@
+opam-version: "2.0"
+maintainer:   "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors: ["Jane Street Group, LLC <opensource@janestreet.com>"]
+homepage: "https://github.com/janestreet/ocaml-compiler-libs"
+bug-reports: "https://github.com/janestreet/ocaml-compiler-libs/issues"
+dev-repo: "git+https://github.com/janestreet/ocaml-compiler-libs.git"
+license: "Apache-2.0"
+build: [
+  ["jbuilder" "build" "-p" "ocaml-compiler-libs" "-j" jobs]
+]
+depends: [
+  
+  "jbuilder" {build & >= "1.0+beta12"}
+  "OCaml-RiscV"
+]
+synopsis: "OCaml compiler libraries repackaged"
+
+install: [["opam-installer" "--prefix=%{prefix}%/esp32-sysroot" "ocaml-compiler-libs.install"]]
+url {
+	src:"https://ocaml.janestreet.com/ocaml-core/v0.10/files/ocaml-compiler-libs-v0.10.0.tar.gz"
+	checksum: "e94f23c3478cb42dc3472617ea86c800"	
+}
