@@ -18,9 +18,6 @@ depends: ["ocaml" "OCaml-RiscV"]
 extra-files: ["Makefile" "md5=c724b976aedf4b1160fe1e218dd46daa"]
 url {
   src: "https://github.com/janestreet/result/archive/1.2.tar.gz"
-  checksum: [
-    "md5=3d5b66c5526918f0f2ca9d6811ef09c8"
-    "sha512=b47fe24302182642c7dfb3329a9a475518fca01ed7080fb625379abbb7ada0bec4a27e666886c101ba4b0083eeb6312740d99ef764690d38ee6e6d8960fc9b87"
-  ]
+  checksum: "md5=3d5b66c5526918f0f2ca9d6811ef09c8"
 }
 synopsis: ""
