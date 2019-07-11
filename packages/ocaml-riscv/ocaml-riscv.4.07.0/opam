@@ -10,19 +10,13 @@ depends: [
 	"ocamlfind"
 	#should add gcc-toolchain-riscv 
 ]
-
 build: [
-	["sh" "./configure" "-prefix" "%{prefix}%/riscv-sysroot" "-no-ocamldoc" "-no-debugger" "-target-bindir" "%{prefix}%/riscv-sysroot/bin"]
-	[make "-j8" "world.opt"]
-	[make "install"]
-	[make "clean"]
-	["env" "PATH=$PATH:%{prefix}%/riscv-sysroot" "sh" "./configure" "--target" "riscv64-unknown-linux-gnu" "-prefix" "%{prefix}%/riscv-sysroot" "-no-ocamldoc" "-no-debugger" "-target-bindir" "%{prefix}%/riscv-sysroot/bin"]
-	[make "-j4" "world" "||" "/bin/true"]
-	[make "-j4" "opt"]
-
+	["sh" "./configure" "--target" "riscv64-unknown-linux-gnu" "-prefix" "%{prefix}%/riscv-sysroot" "-no-ocamldoc" "-no-debugger" "-target-bindir" "%{prefix}%/riscv-sysroot/bin"]
+	["sh" "./build.sh"]
 ]
 install: [
-	["cp" "%{prefix}%/riscv-sysroot/bin/ocamlrun" "byterun"]
+	["cp" "%{prefix}%/bin/ocamlrun" "byterun"]
+	#["cp" "%{prefix}%/lib/ocaml" "%{prefix}%/riscv-sysroot/lib/ocaml"]
 	[make "install"]
 	["sh" "./install.sh"]
 ]
@@ -32,7 +26,7 @@ remove: [
 url {
   src: "https://github.com/SaiVK/OCaml-RiscV/archive/v4.07.0.tar.gz"
   checksum: [
-    "md5=491d1e9a9766c47d4895aaccf1259937"
-    "sha512=63a526353cac3be43293a1a1a7ac8ac2217ba9e9fd6d9f7946b5ebc12759ec2cc9906bd1fb90095dcf0bd1b526002bd75a737b615764c1df4b2dcb0a9b464bfb"
+    "md5=3a1fb0b50a0f6c8d24bfad606ee4fe6e"
+    "sha512=1ac1ff879df6504264a8b9af4000f98d786239bd6b40703111d0cdcc535f92e360460312980a9768ff1adee5b2bd5e9b11654b99e43a5539eb606bbb01fd3fa7"
   ]
 }
