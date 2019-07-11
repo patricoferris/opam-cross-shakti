@@ -13,8 +13,6 @@ license: "BSD3"
 
 
 build: [["dune" "build" "-x" "riscv" "-p" "result" "-j" jobs]] 
-install: [["dune" "install" "--prefix=%{prefix}%/riscv-sysroot" "result"]]
-remove: [["ocamlfind" "-toolchain" "riscv" "remove" "result"]]
 
 depends: [
 	"ocaml" {= "4.07.0"} 
