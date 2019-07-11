@@ -17,6 +17,7 @@ build: [
 install: [
 	["cp" "%{prefix}%/bin/ocamlrun" "byterun"]
 	[make "install"]
+	["cp" "%{prefix}%/lib/ocaml" "-n" "-r" "%{prefix}%/riscv-sysroot/lib/"]
 	["sh" "./install.sh"]
 ]
 remove: [
@@ -25,7 +26,7 @@ remove: [
 url {
   src: "https://github.com/SaiVK/OCaml-RiscV/archive/v4.07.0.tar.gz"
   checksum: [
-    "md5=2aaa5fecbf94f47847484a6b81ea140b"
-    "sha512=e76d14cb88ad7cae3652da431b7c7c0a6d4eb4e086ef3d36e4884d2bc5a248f18888340486c2af953a7badac8d8d54446ab9af7e07390b92abc225016e86ab88"
+    "md5=418ffbcf3654497ab52dbae3cc1b8451"
+    "sha512=e3bb454c6e6ee72a933ec592f5aafd9fa602857364851fdd8c080fae3290e474eb4faa188b33f2f9e0524b0ccd7cae089656017c57015544dddb9c45b7e36e4e"
   ]
 }
