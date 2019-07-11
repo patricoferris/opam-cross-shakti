@@ -7,7 +7,7 @@ dev-repo: "git+https://github.com/janestreet/fieldslib.git"
 doc: "https://ocaml.janestreet.com/ocaml-core/latest/doc/fieldslib/index.html"
 license: "MIT"
 build: [
-  ["dune" "build" "-x" "riscv" "-p" name "-j" jobs]
+  ["dune" "build" "-x" "riscv" "-p" "fieldslib" "-j" jobs]
 ]
 depends: [
   "ocaml" {>= "4.04.2"}
