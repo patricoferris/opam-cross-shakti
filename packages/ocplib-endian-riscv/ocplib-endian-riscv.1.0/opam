@@ -7,7 +7,7 @@ build: [
   ["env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "setup.ml" "-build"]
 ]
 install: [
-  ["env" "OCAMLFIND_TOOLCHAIN=esp32" "ocaml" "setup.ml" "-install"]
+  ["env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "setup.ml" "-install"]
 ]
 #remove: ["ocamlfind" "remove" "ocplib-endian"]
 depends: [
