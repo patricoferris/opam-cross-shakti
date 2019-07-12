@@ -17,8 +17,8 @@ build: [
 depends: [
   "dune"     {build & >= "1.5.1"}
   "num-riscv"
-  "parsexp-riscv"  {>= "0.12" & < "0.13"}
-  "sexplib0-riscv" {>= "0.12" & < "0.13"}
+  "parsexp-riscv"  
+  "sexplib0-riscv" 
   "ocaml-riscv"
   "ocaml" {= "4.07.0"} 
 ]
