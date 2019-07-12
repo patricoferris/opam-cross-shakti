@@ -1,0 +1,36 @@
+opam-version: "2.0"
+maintainer:   "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors:      ["Thomas Gazagnaire" "Anil Madhavapeddy" "Gabriel Radanne"
+               "Mindy Preston" "Thomas Leonard" "Nicolas Ojeda Bar"
+               "Dave Scott" "David Kaloper" "Hannes Mehnert" "Richard Mortier"]
+homepage:     "https://github.com/mirage/mirage"
+bug-reports:  "https://github.com/mirage/mirage/issues/"
+dev-repo:     "git+https://github.com/mirage/mirage.git"
+license:      "ISC"
+tags:         ["org:mirage" "org:xapi-project"]
+doc:          "https://mirage.github.io/mirage/"
+
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-x" "riscv" "-p" "mirage-runtime" "-j" jobs]
+  ["dune" "runtest" "-p" "mirage-runtime" "-j" jobs] {with-test}
+]
+
+depends: [
+  "ocaml" {= "4.07.0"}
+  "dune" {build & >= "1.1.0"}
+  "ocaml-riscv"
+  "ipaddr-riscv"
+  "functoria-runtime-riscv"
+  "fmt-riscv"
+  "logs-riscv"
+]
+synopsis: "The base MirageOS runtime library, part of every MirageOS unikernel"
+description: """
+A bundle of useful runtime functions for applications built with MirageOS
+"""
+url {
+  src:
+    "https://github.com/mirage/mirage/releases/download/v3.5.0/mirage-v3.5.0.tbz"
+  checksum: "md5=4254a635bbf4744bb8a7d1d1cc4011b4"
+}
