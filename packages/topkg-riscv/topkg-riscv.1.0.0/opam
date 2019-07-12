@@ -15,7 +15,7 @@ depends: [
   "result" ]
 build: [[
   "ocaml" "pkg/pkg.ml" "build"
-          "--pkg-name" name
+          "--pkg-name" "topkg"
           "--dev-pkg" "%{pinned}%" ]]
 
 install: [["opam-installer" "--prefix=%{prefix}%/riscv-sysroot" "topkg.install"]]
