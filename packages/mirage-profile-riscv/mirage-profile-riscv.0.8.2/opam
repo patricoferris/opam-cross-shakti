@@ -27,9 +27,9 @@ depends: [
   "jbuilder"  {build & >="1.0+beta9"}
   "cstruct-riscv" {>= "3.0.0"}
   "ppx_cstruct" {build}
-  "ppx_cstruct-riscv" {build}
+  #"ppx_cstruct-riscv" {build}
   "ocplib-endian-riscv"
-  "ppx_tools_versioned-riscv"
+  "ppx_tools_versioned"
   "lwt-riscv"
   "ocaml-riscv"
 ]
