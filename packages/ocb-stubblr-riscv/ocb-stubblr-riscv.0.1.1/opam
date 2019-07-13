@@ -16,7 +16,7 @@ depends: [
   "astring-riscv"
 ]
 
-build: [ "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%" "--tests" "false" "--toolchain" "riscv"]
+build: [ "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%" "--tests" "false" ]
 install: [["opam-installer" "--prefix=%{prefix}%/riscv-sysroot" "ocb-stubblr.install"]]
 
 synopsis: "OCamlbuild plugin for C stubs"
