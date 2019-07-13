@@ -16,7 +16,7 @@ depends: [
 ]
 build: [
   ["dune" "subst"] {pinned}
-  ["dune" "build" "-x " "riscv" "-p" "mirage-console-lwt" "-j" jobs]
+  ["dune" "build" "-x" "riscv" "-p" "mirage-console-lwt" "-j" jobs]
 ]
 dev-repo: "git+https://github.com/mirage/mirage-console.git"
 synopsis: "Implementation of Mirage consoles using Lwt"
