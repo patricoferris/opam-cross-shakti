@@ -12,13 +12,14 @@ doc: "https://mirage.github.io/ocaml-cstruct/"
 tags: [ "org:mirage" "org:ocamllabs" ]
 build: [
   ["dune" "subst"] {pinned}
-  ["dune" "build" "-x" "riscv" "-p" "ppx_cstruct" "-j" jobs]
+  ["dune" "build" "-p" "ppx_cstruct" "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test & ocaml:version < "4.08.0"}
 ]
+install: [["dune" "install" "--prefix=%{prefix}%/riscv-sysroot" "ppx_derivers"]]
 depends: [
   "ocaml" {= "4.07.0"}
   "dune" {>= "1.0"}
-  "ocaml-riscv"
+  "ocaml"
   "cstruct-riscv" 
   "ounit" {with-test}
   "ppx_tools_versioned" {>= "5.0.1"}
