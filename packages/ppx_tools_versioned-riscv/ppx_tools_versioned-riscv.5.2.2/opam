@@ -18,7 +18,7 @@ install: [["dune" "install" "--prefix=%{prefix}%/riscv-sysroot" "ppx_tools_versi
 depends: [
   "ocaml" {>= "4.02.0"}
   "dune" {>= "1.0"}
-  "ocaml-migrate-parsetree"
+  "ocaml-migrate-parsetree-riscv"
   "ocaml-riscv"
 ]
 synopsis: "A variant of ppx_tools based on ocaml-migrate-parsetree"
