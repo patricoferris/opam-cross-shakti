@@ -20,12 +20,12 @@ depends: [
   "ocaml" {= "4.07.0"}
   "dune" {>= "1.0"}
   "ocaml"
-  "cstruct-riscv" 
+  "cstruct" 
   "ounit" {with-test}
-  "ppx_tools_versioned-riscv" {>= "5.0.1"}
-  "ocaml-migrate-parsetree-riscv"
+  "ppx_tools_versioned" {>= "5.0.1"}
+  "ocaml-migrate-parsetree"
   "ppx_sexp_conv" {with-test & < "v0.13"}
-  "sexplib-riscv" {< "v0.13"}
+  "sexplib" {< "v0.13"}
   "cstruct-sexp" {with-test}
   "cstruct-unix" {with-test & =version}
 ]
