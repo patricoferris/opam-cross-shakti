@@ -13,7 +13,7 @@ tags: [ "syntax" "org:ocamllabs" ]
 build: [
   ["dune" "build" "-p" "ocaml-migrate-parsetree" "-j" jobs]
 ]
-
+install: [["dune" "install" "--prefix=%{prefix}%/riscv-sysroot" "ocaml-migrate-parsetree"]]
 depends: [
   "result"
   "ppx_derivers"
