@@ -15,8 +15,8 @@ build: [
 ]
 install: [["dune" "install" "--prefix=%{prefix}%/riscv-sysroot" "ocaml-migrate-parsetree"]]
 depends: [
-  "result"
-  "ppx_derivers"
+  "result-riscv"
+  "ppx_derivers-riscv"
   "dune" {>= "1.9.0"}
   "ocaml" {>= "4.02.3"}
   "ocaml-riscv"
