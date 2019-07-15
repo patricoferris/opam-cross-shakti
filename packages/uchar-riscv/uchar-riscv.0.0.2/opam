@@ -24,8 +24,8 @@ depends: [
 build:
 [
   [ "ocaml" "pkg/git.ml" ]
-#  [ "env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "pkg/build.ml"  "native=false" "native-dynlink=false"]
-  [ "env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "pkg/build.ml" ]
+  [ "env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "pkg/build.ml"  "native=true" "native-dynlink=true"]
+#  [ "env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "pkg/build.ml" ]
 ]
 install: [["opam-installer" "--prefix=%{prefix}%/riscv-sysroot" "uchar.install"]]
 url {
