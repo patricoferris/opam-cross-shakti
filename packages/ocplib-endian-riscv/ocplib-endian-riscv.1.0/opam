@@ -3,7 +3,8 @@ authors: "Pierre Chambart"
 maintainer: "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
 homepage: "https://github.com/OCamlPro/ocplib-endian"
 build: [
-  ["env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "setup.ml" "-configure" "--override" "native_dynlink" "false" "--prefix" "%{prefix}%/riscv-sysroot"]
+  #["env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "setup.ml" "-configure" "--override" "native_dynlink" "false" "--prefix" "%{prefix}%/riscv-sysroot"]
+  ["env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "setup.ml" "-configure" "--prefix" "%{prefix}%/riscv-sysroot"]
   ["env" "OCAMLFIND_TOOLCHAIN=riscv" "ocaml" "setup.ml" "-build"]
 ]
 install: [
