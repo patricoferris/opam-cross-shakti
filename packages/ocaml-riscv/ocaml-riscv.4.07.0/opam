@@ -25,7 +25,7 @@ remove: [
 url {
   src: "https://github.com/SaiVK/OCaml-RiscV/archive/v4.07.0.tar.gz"
   checksum: [
-    "md5=1d7d45ecda60b44225f7d05cba57e1b9"
-    "sha512=01121d07e86f8add47c86a1f33a4634f95ebca5aab8b10746ed02258cd9834b7ea6e7534e6b9f4605e2ac38d17e24ee50b27aad8c4cd2a37055c5c3437bbe74a"
+    "md5=21b1103c885355c99c39c30adf5faa35"
+    "sha512=f5d764d45339f91d6d1e3ee880de9d16ef47f3502e3a7a175932d8a40081e832f39473c7f5b3f20b61fe365769a1bcd42d5aa72218fd6fa362f6946e6e20c411"
   ]
 }
