@@ -23,9 +23,10 @@ remove: [
     [ "rm" "-rf" "%{prefix}%/riscv-sysroot" ]
 ]
 url {
-  src: "https://github.com/SaiVK/OCaml-RiscV/archive/v4.07.0.tar.gz"
+  src:
+    "https://github.com/mirage-shakti-iitm/ocaml-riscv/archive/4.07.tar.gz"
   checksum: [
-    "md5=21b1103c885355c99c39c30adf5faa35"
-    "sha512=f5d764d45339f91d6d1e3ee880de9d16ef47f3502e3a7a175932d8a40081e832f39473c7f5b3f20b61fe365769a1bcd42d5aa72218fd6fa362f6946e6e20c411"
+    "md5=1cab65482b45c2c83543609dbc7b1130"
+    "sha512=c716b8aaef703c1ee8bb093c2576570e4fc6eafde1b6a855d87c4ea0b621429019ea7e22fa36f89ae0da08e4b293ef1fc99cf86a83e07e7a9a908598489e182f"
   ]
 }
