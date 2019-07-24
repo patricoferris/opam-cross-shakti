@@ -50,8 +50,8 @@ build:[[
 install: [["opam-installer" "--prefix=%{prefix}%/riscv-sysroot" "ptime.install"]]
 
 extra-files: [
-	["pkg.patch" "md5=2eb060781347cd8000f43f3a2549e41b"]
-	["clock_stubs.patch" "md5=a162c04e5f3909d191bedc12b48c9f2f"]
+	["pkg.patch" "md5=38a8e40ba1144052ddc273ac948ccff1"]
+	["clock_stubs.patch" "md5=4f0f2115b0521828823190d563c65669"]
 ]
 
 patches: [ "pkg.patch" "clock_stubs.patch" ]
