@@ -1,0 +1,26 @@
+diff --git a/lib/dune b/lib/dune
+index 41d99bb..6492314 100644
+--- a/lib/dune
++++ b/lib/dune
+@@ -20,21 +20,3 @@
+  (public_name macaddr.sexp)
+  (modules macaddr_sexp)
+  (libraries macaddr sexplib0))
+-
+-(library
+- (name        ipaddr_unix)
+- (public_name ipaddr.unix)
+- (modules ipaddr_unix)
+- (libraries unix ipaddr))
+-
+-(library
+- (name        ipaddr_top)
+- (public_name ipaddr.top)
+- (modules ipaddr_top)
+- (libraries macaddr.top ipaddr compiler-libs))
+-
+-(library
+- (name        macaddr_top)
+- (public_name macaddr.top)
+- (modules macaddr_top)
+- (libraries macaddr compiler-libs))
