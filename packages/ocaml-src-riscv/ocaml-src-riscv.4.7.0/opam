@@ -1,0 +1,21 @@
+opam-version: "2.0"
+version: "4.07.0"
+maintainer: "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors: "OCaml contributors"
+homepage: "http://ocaml.org/"
+remove: [["rm" "-rf" "%{prefix}%/riscv-sysroot/lib/ocaml-src-riscv"]]
+install: ["cp" "-r" "." "%{prefix}%/riscv-sysroot/lib/ocaml-src-riscv"]
+synopsis: "Compiler sources"
+depends: [
+  "ocaml-riscv"
+]
+flags: light-uninstall
+extra-files: ["META" "md5=03cfb771caceeb114419101a82e6c093"]
+url {
+  src:
+    "https://github.com/mirage-shakti-iitm/ocaml-riscv/archive/4.07.tar.gz"
+  checksum: [
+    "md5=1cab65482b45c2c83543609dbc7b1130"
+    "sha512=c716b8aaef703c1ee8bb093c2576570e4fc6eafde1b6a855d87c4ea0b621429019ea7e22fa36f89ae0da08e4b293ef1fc99cf86a83e07e7a9a908598489e182f"
+  ]
+}
