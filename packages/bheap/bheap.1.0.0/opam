@@ -1,0 +1,25 @@
+opam-version: "2.0"
+synopsis: "Binary heap implementation"
+maintainer: "Sai Venkata Krishnan <saigensha5.svkv@gmail.com>"
+authors: ["Jean-Christophe Filliâtre"]
+homepage: "https://www.lri.fr/~filliatr/software.en.html"
+bug-reports: "https://github.com/UnixJunkie/bheap/issues"
+dev-repo: "git+https://github.com/UnixJunkie/bheap.git"
+license: "LGPL-2.1"
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "ocaml" 
+  "ocamlfind"
+  "obuild" {build}
+]
+url {
+  src: "https://github.com/mirage-shakti-iitm/bheap/archive/v1.0.0.tar.gz"
+  checksum: [
+    "md5=ff013a4a725eac6a9929bf0cf036879d"
+    "sha512=4f81972cad19177cf80b5a38702f9d24c47ab5f84488886bbd5651e335663ec014cd6d61f8362d439117fbe3c7be75b08c802f25eb81959298055724fdd44e2d"
+  ]
+}
