@@ -21,7 +21,7 @@ depends: [
 url {
   src: "https://github.com/mirage-shakti-iitm/bheap/archive/v1.0.0.tar.gz"
   checksum: [
-    "md5=c5ad60e969756ba791d9dd54138e79a5"
-    "sha512=e8fb66914fc24728cd5bd07ed0bb10601cb7af58d31ac589a8fafc0a1864f5a0349cf87c6a94c7e949fa7cbb337680399d78dec8b81c31f5a0699ae05f000f45"
+    "md5=ff013a4a725eac6a9929bf0cf036879d"
+    "sha512=4f81972cad19177cf80b5a38702f9d24c47ab5f84488886bbd5651e335663ec014cd6d61f8362d439117fbe3c7be75b08c802f25eb81959298055724fdd44e2d"
   ]
 }
