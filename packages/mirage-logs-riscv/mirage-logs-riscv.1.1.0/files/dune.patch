@@ -1,0 +1,12 @@
+diff --git a/src/dune b/src/dune
+index 9b69ba5..310a081 100644
+--- a/src/dune
++++ b/src/dune
+@@ -1,4 +1,4 @@
+ (library
+   (name mirage_logs)
+   (public_name mirage-logs)
+-  (libraries logs mirage-clock lwt mirage-profile ptime))
+\ No newline at end of file
++  (libraries logs mirage-clock lwt ptime))
+\ No newline at end of file
