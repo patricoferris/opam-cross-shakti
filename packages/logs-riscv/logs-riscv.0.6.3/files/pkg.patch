@@ -1,0 +1,17 @@
+diff --git a/pkg/pkg.ml b/pkg/pkg.ml
+index aec5fb9..0a353a1 100755
+--- a/pkg/pkg.ml
++++ b/pkg/pkg.ml
+@@ -19,9 +19,9 @@ let () =
+        Pkg.mllib ~cond:jsoo "src/logs_browser.mllib";
+        Pkg.mllib ~cond:cmdliner "src/logs_cli.mllib";
+        Pkg.mllib ~cond:lwt "src/logs_lwt.mllib";
+-       Pkg.mllib ~cond:fmt ~api:[] "src/logs_top.mllib";
+-       Pkg.lib "src/logs_top_init.ml";
+-       Pkg.lib "src/logs_fmt_top_init.ml";
++       (* Pkg.mllib ~cond:fmt ~api:[] "src/logs_top.mllib"; *)
++       (* Pkg.lib "src/logs_top_init.ml"; *)
++       (* Pkg.lib "src/logs_fmt_top_init.ml"; *)
+        Pkg.doc "test/tool.ml";
+        Pkg.doc "test/tags.ml";
+        Pkg.test "test/test_fmt";
