@@ -3,8 +3,8 @@ version: "4.07.0"
 maintainer: "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
 authors: "OCaml contributors"
 homepage: "http://ocaml.org/"
-remove: [["rm" "-rf" "%{prefix}%/riscv-sysroot/lib/ocaml-src-riscv"]]
-install: ["cp" "-r" "." "%{prefix}%/riscv-sysroot/lib/ocaml-src-riscv"]
+remove: [["rm" "-rf" "%{prefix}%/lib/ocaml-src-riscv"]]
+install: ["cp" "-r" "." "%{prefix}%/lib/ocaml-src-riscv"]
 synopsis: "Compiler sources"
 depends: [
   "ocaml-riscv"
