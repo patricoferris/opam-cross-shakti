@@ -24,7 +24,7 @@ url {
   src:
     "https://github.com/mirage-shakti-iitm/ocaml-boot-riscv/archive/v0.1.tar.gz"
   checksum: [
-    "md5=edeb5612ba98061ac552f1d3f10b3ebf"
-    "sha512=73d52ad3f7cad8efebfafad4ce3c965a3a6d5d3dbbb3bf44e3bf693bd3e00324bc833396ca322544befc38e7222d55b68bfb4380c9a36c56b48cb8d039604f48"
+    "md5=551bbc8de572b4942ff7e3014538b172"
+    "sha512=072f6d506eeeb1de6014ffaad4d28a0ff66f909e02c052a03092d0ea4caf1b21b3ffacb4b40e4c9291bf8bdc3808c1f1c115102b43268ca2ef79b26a948254cc"
   ]
 }
