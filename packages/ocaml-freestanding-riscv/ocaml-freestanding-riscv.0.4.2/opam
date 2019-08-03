@@ -20,20 +20,11 @@ depends: [
   "ocaml-riscv"
   "ocaml-boot-riscv"
 ]
-conflicts: [
-  "sexplib" {= "v0.9.0"}
-  "solo5-kernel-ukvm"
-  "solo5-kernel-virtio"
-  "solo5-kernel-muen"
-]
 substs: [
-  "cflags.tmp"
-  "libs.tmp"
+  "files/cflags.tmp"
+  "files/libs.tmp"
 ]
-extra-files: [
-  ["cflags.tmp.in" "md5=a5cc9f5c04e5d96b0f2b6f62f8a165e1"]
-  ["libs.tmp.in" "md5=30bd7458eb618332e03406b3de9908a6"]
-] 
+
 synopsis: "Freestanding OCaml runtime"
 description:
   "This package provides a freestanding OCaml runtime (asmrun), suitable for linking with a unikernel base layer. Modified for RiscV"
@@ -41,7 +32,7 @@ url {
   src:
     "https://github.com/mirage-shakti-iitm/ocaml-freestanding-riscv/archive/v0.4.2.tar.gz"
   checksum: [
-    "md5=579e75d331d30d23e043e9a9edc78b19"
-    "sha512=8d6020223359e7727c888a68c98262a4a469eb82badab8a49d4ef9a30ae21ea64fca37220937c74d086b13f92223a049563eaa953d64992e1534500a20f3d728"
+    "md5=bd9f79918aee84d12cc566fe98600957"
+    "sha512=08a411cb1fa160a327f47165f0910c9184187ca1ce6871788b639deda220c1507413acf7b2d8d0820d61b30372bec0a237236fd4eb00d40c40c0e8316810f0de"
   ]
 }
