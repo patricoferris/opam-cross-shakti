@@ -20,10 +20,6 @@ depends: [
   "ocaml-riscv"
   "ocaml-boot-riscv"
 ]
-substs: [
-  "files/cflags.tmp"
-  "files/libs.tmp"
-]
 
 synopsis: "Freestanding OCaml runtime"
 description:
@@ -32,7 +28,7 @@ url {
   src:
     "https://github.com/mirage-shakti-iitm/ocaml-freestanding-riscv/archive/v0.4.2.tar.gz"
   checksum: [
-    "md5=bd9f79918aee84d12cc566fe98600957"
-    "sha512=08a411cb1fa160a327f47165f0910c9184187ca1ce6871788b639deda220c1507413acf7b2d8d0820d61b30372bec0a237236fd4eb00d40c40c0e8316810f0de"
+    "md5=a03a50ab526372a92181be5658c7c744"
+    "sha512=c7b2bf04e297fd415c3dac5fbd62d4c2bec29bcce8b083a82fcc3505e0649a34c1279b6b86179a4d4a2d85f30ea163fe81e50d7940bad049b08fc9018f0d45be"
   ]
 }
