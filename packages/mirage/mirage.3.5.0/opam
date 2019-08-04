@@ -15,7 +15,7 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-#install: [["dune" "install" "--prefix=%{prefix}%/riscv-sysroot" "mirage"]]
+
 depends: [
   "ocaml" {>= "4.04.2"}
   "dune" {build & >= "1.1.0"}
@@ -26,6 +26,12 @@ depends: [
   "logs"
   "mirage-runtime"     {>= "3.5.0"}
 ]
+
+patches: ["mirage_num.patch"] 
+extra-files:[
+  [ "mirage_num.patch" "md5=5497dd27a9e40bb0546319c02d2bb240" ]
+]
+
 synopsis: "The MirageOS library operating system"
 description: """
 MirageOS is a library operating system that constructs unikernels for
