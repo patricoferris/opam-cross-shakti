@@ -6,7 +6,7 @@ license: "LGPL v2.1"
 homepage: "https://github.com/kayceesrk/riscv-ocaml/tree/4.07+cross"
 substs: [ "riscv.conf" ]
 depends: [ 
-	"ocaml" {= "4.07.0"} 
+	"ocaml" {>= "4.07.0"} 
 	"ocamlfind"
 	#should add gcc-toolchain-riscv 
 ]

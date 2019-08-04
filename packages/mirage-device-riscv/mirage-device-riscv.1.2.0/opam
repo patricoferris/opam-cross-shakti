@@ -18,7 +18,7 @@ homepage: "https://github.com/mirage/mirage-device"
 doc: "https://mirage.github.io/mirage-device/"
 bug-reports: "https://github.com/mirage/mirage-device/issues"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build & >= "1.0"}
   "ocaml-riscv"
   "fmt-riscv"

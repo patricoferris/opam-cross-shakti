@@ -7,7 +7,7 @@ homepage: "https://github.com/mirage/mirage-profile"
 doc: "https://mirage.github.io/mirage-profile/"
 bug-reports: "https://github.com/mirage/mirage-profile/issues"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build & >= "1.0"}
   "ppx_cstruct" {build}
   "ocaml-riscv"

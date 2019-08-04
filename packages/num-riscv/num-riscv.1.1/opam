@@ -20,7 +20,7 @@ build: [
 install: ["env" "OCAMLFIND_TOOLCHAIN=riscv" make "install"]
 
 depends: [
-  "ocaml"  {= "4.07.0"}
+  "ocaml"  {>= "4.07.0"}
   "ocaml-riscv" 
   "ocamlfind" {build & >= "1.7.3"}
 ]

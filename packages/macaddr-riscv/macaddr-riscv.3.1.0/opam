@@ -9,7 +9,7 @@ homepage: "https://github.com/mirage/ocaml-ipaddr"
 doc: "https://mirage.github.io/ocaml-ipaddr/"
 bug-reports: "https://github.com/mirage/ocaml-ipaddr/issues"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build}
   "sexplib0-riscv"
   "ocaml-riscv"

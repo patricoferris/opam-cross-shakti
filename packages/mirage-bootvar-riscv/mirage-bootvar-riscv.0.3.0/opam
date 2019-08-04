@@ -18,7 +18,7 @@ build: [
 install: [["opam-installer" "--prefix=%{prefix}%/riscv-sysroot" "mirage-bootvar-riscv.install"]]
 
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "ocamlfind" {build}
   "ocamlbuild" {build}
   "topkg" {build}

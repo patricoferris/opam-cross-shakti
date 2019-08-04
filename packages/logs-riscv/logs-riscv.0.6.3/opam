@@ -34,7 +34,7 @@ bug-reports: "https://github.com/dbuenzli/logs/issues"
 tags: [ "log" "system" "org:erratique" ]
 license: "ISC"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "ocamlfind" {build}
   "ocamlbuild" {build}
   "ocaml-riscv"

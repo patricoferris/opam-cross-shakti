@@ -7,7 +7,7 @@ homepage: "https://github.com/mirage/mirage-console"
 doc: "https://mirage.github.io/mirage-console/"
 bug-reports: "https://github.com/mirage/mirage-console/issues"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build & >= "1.0"}
   "ocaml-riscv"
   "mirage-console-riscv" 

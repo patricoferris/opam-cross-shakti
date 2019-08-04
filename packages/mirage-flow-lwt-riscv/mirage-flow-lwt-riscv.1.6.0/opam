@@ -7,7 +7,7 @@ homepage: "https://github.com/mirage/mirage-flow"
 doc: "https://mirage.github.io/mirage-flow/"
 bug-reports: "https://github.com/mirage/mirage-flow/issues"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {>= "1.0"}
   "ocaml-riscv"
   "fmt-riscv"

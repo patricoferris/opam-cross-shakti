@@ -6,7 +6,7 @@ license: "ISC"
 homepage: "https://github.com/mirage/bigarray-compat"
 bug-reports: "https://github.com/mirage/bigarray-compat/issues"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build & >= "1.0"}
   "ocaml-riscv"
 ]

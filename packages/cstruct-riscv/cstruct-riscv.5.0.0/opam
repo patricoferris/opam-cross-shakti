@@ -19,7 +19,7 @@ build: [
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build & >= "1.0"}
   "bigarray-compat-riscv"
   "ocaml-riscv"

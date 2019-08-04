@@ -17,7 +17,7 @@ since an arbitrary point, and `PCLOCK` which counts time since the Unix
 epoch.
 """
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build}
   "ocaml-riscv"
   "mirage-device-riscv" 

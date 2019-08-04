@@ -12,7 +12,7 @@ This implementation of the MirageOS CLOCK interface specialises
 the `io` type to use the Lwt concurrency monad.
 """
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build}
   "ocaml-riscv"
   "mirage-clock-riscv" 

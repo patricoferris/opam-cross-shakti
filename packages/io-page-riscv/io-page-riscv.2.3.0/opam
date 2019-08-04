@@ -7,7 +7,7 @@ homepage: "https://github.com/mirage/io-page"
 bug-reports: "https://github.com/mirage/io-page/issues"
 doc: "https://mirage.github.io/io-page/"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune"
   "cstruct-riscv" 
   "bigarray-compat-riscv"

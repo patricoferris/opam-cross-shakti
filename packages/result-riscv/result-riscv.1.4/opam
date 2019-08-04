@@ -15,7 +15,7 @@ license: "BSD3"
 build: [["dune" "build" "-x" "riscv" "-p" "result" "-j" jobs]] 
 
 depends: [
-	"ocaml" {= "4.07.0"} 
+	"ocaml" {>= "4.07.0"} 
 	"ocaml-riscv"
 	"dune" {build & >= "1.0"}
 ]

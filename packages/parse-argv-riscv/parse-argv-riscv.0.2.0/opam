@@ -6,7 +6,7 @@ homepage: "https://github.com/mirage/parse-argv"
 doc: "https://mirage.github.io/parse-argv/"
 bug-reports: "https://github.com/mirage/parse-argv/issues"
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build & >= "1.0"}
   "ounit" {with-test}
   "ocaml-riscv"

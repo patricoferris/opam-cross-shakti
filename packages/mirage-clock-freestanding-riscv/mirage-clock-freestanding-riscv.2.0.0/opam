@@ -14,7 +14,7 @@ include the [Solo5](https://github.com/solo5/solo5) backend of
 MirageOS.
 """
 depends: [
-  "ocaml" {= "4.07.0"}
+  "ocaml" {>= "4.07.0"}
   "dune" {build}
   "ocaml-riscv"
   "mirage-clock-riscv" 

@@ -20,7 +20,7 @@ depends: [
   "parsexp-riscv"  
   "sexplib0-riscv" 
   "ocaml-riscv"
-  "ocaml" {= "4.07.0"} 
+  "ocaml" {>= "4.07.0"} 
 ]
 
 url {
