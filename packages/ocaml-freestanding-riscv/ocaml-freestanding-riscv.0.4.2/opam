@@ -35,7 +35,7 @@ url {
   src:
     "https://github.com/mirage-shakti-iitm/ocaml-freestanding-riscv/archive/v0.4.2.tar.gz"
   checksum: [
-    "md5=b9d347675b0c329f9da41ee348ce23d5"
-    "sha512=54d5591af86b1b452ccec068147134679984f0eb36e9e089a82c53628aab866fcf08f354f1351b798fd518e80990925891d53355fb4215b2ecae0be13c7dc427"
+    "md5=544aec4d5c30d18ce37f24392e631bbd"
+    "sha512=9152e5446f472e2654415e0801c4ca5ab5142d44034ab5b3f10654c66aa8b4a7169d94f2cc3551091666871cde7ab663df700516439378ff130900fe97bda392"
   ]
 }
