@@ -24,9 +24,9 @@ remove: [
 ]
 url {
   src:
-    "https://github.com/mirage-shakti-iitm/ocaml-riscv/archive/4.07.tar.gz"
+    "https://github.com/mirage-shakti-iitm/ocaml-riscv/archive/v4.07+cross.tar.gz"
   checksum: [
-    "md5=1cab65482b45c2c83543609dbc7b1130"
-    "sha512=c716b8aaef703c1ee8bb093c2576570e4fc6eafde1b6a855d87c4ea0b621429019ea7e22fa36f89ae0da08e4b293ef1fc99cf86a83e07e7a9a908598489e182f"
+    "md5=fe01d4b9391c3a36aeb4b114b8d50e05"
+    "sha512=c8f4f73f09b6abe88113e453d9ddecc0dc35b3740f0a1ebbe913ec8aa686a01987e17a31808ea2bcd40fb5ddd40756c54ca99ab6d6a6568f3bf9740a07328e6a"
   ]
 }
