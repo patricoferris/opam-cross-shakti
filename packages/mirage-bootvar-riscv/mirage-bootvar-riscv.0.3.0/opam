@@ -32,7 +32,7 @@ url {
   src:
     "https://github.com/mirage-shakti-iitm/mirage-bootvar-riscv/archive/v0.3.0.tar.gz"
   checksum: [
-    "md5=4b82969d9eb8556369cee92a76c6a5bf"
-    "sha512=e906c12d079a9e350ab6fe75637fae493f6fc6549b82cb2ecc137156db61b10aa6d9f382a44d2d792a98195b854d28c3e945b8b067d1bf432e5345eb03e75245"
+    "md5=4b1b175aed85e7c7e3f07eec394abe7f"
+    "sha512=cce6f09d7b0c9d7c6f49ed0d2f14a55a38151bfb5299fa458c4374f08671b9aabeee26c13cbf0fba79d82cbcdff9074d119dc02337d08e922c688633a3c65c55"
   ]
 }
