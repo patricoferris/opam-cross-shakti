@@ -28,7 +28,8 @@ depends: [
   "ocamlfind" {build}
   "ocamlbuild" {build}
   "topkg" {build & >= "0.9.0"}
-  "stdlib-shims-riscv"
+  "result-riscv"
+  "uchar-riscv"
 ]
 extra-files: ["pkg.patch" "md5=ebe5d9a020d62c1bdc3de8f227b7e939"]
 patches: [ "pkg.patch" ]
