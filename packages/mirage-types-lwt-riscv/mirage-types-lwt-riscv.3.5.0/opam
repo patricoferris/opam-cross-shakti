@@ -1,0 +1,50 @@
+version: "3.5.0"
+opam-version: "2.0"
+maintainer:   "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors:      "The MirageOS team"
+homepage:     "https://github.com/mirage/mirage"
+bug-reports:  "https://github.com/mirage/mirage/issues/"
+dev-repo:     "git+https://github.com/mirage/mirage.git"
+license:      "ISC"
+tags:         ["org:mirage" "org:xapi-project"]
+
+
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-x" "riscv" "-p" "mirage-types-lwt" "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends:   [
+  "ocaml" {= "4.07.0"}
+  "dune" {build & >= "1.1.0"}
+  "ocaml-riscv"
+  "lwt-riscv"
+  "cstruct-riscv" {>="3.2.1"}
+  "ipaddr-riscv" {>= "3.0.0"}
+  "mirage-types-riscv" {>= "3.5.0"}
+  "mirage-clock-lwt-riscv" {>= "2.0.0"}
+  "mirage-time-lwt-riscv" {>= "1.1.0"}
+  "mirage-flow-lwt-riscv" {>= "1.5.0"}
+  "mirage-console-lwt-riscv" {>= "2.3.5"}
+]
+
+
+patches: ["dune.patch" "types.patch" "types_lwt.patch"]
+extra-files:[
+  [ "dune.patch" "md5=ba2d44f8a083ad2103f9394ee20b9bc0" ]
+  [ "types_lwt.patch" "md5=d5cce43581588209a2752c9cb62a6b6a" ]
+  [ "types.patch" "md5=f42e1eb168befcf6571d160e609cb4da" ]
+]
+
+synopsis: "Lwt module type definitions for MirageOS applications"
+description: """
+The purpose of this library is to provide concrete types
+for several that are left abstract in `mirage-types`:
+
+- `type 'a io = 'a Lwt.t`
+- `type page_aligned_buffer = Io_page.t`
+- `type buffer = Cstruct.t`
+- `type macaddr = Macaddr.t`
+- `type ipv4addr = Ipaddr.V4.t`
+"""
