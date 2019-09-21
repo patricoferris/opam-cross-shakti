@@ -11,7 +11,7 @@ dev-repo: "git+https://github.com/ocaml-ppx/ocaml-migrate-parsetree.git"
 doc: "https://ocaml-ppx.github.io/ocaml-migrate-parsetree/"
 tags: [ "syntax" "org:ocamllabs" ]
 build: [
-  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "build" "-p" "ocaml-migrate-parsetree" "-j" jobs]
 ]
 install: [["dune" "install" "--prefix=%{prefix}%/riscv-sysroot" "ocaml-migrate-parsetree"]]
 depends: [
