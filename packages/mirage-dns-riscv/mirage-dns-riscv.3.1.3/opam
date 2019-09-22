@@ -20,16 +20,16 @@ for the [MirageOS unikernel framework](https://mirage.io).
 depends: [
   "ocaml" {>= "4.05.0"}
   "dune" {>= "1.2"}
-  "dns-lwt" {>="1.1.3" & < "2.0.0"}
-  "duration"
-  "mirage-stack-lwt" {>= "1.3.0"}
-  "mirage-kv-lwt" {>= "2.0.0"}
-  "mirage-time-lwt"
-  "mirage-profile" {>= "0.8.0"}
+  "dns-lwt-riscv" {>="1.1.3" & < "2.0.0"}
+  "duration-riscv"
+  "mirage-stack-lwt-riscv" {>= "1.3.0"}
+  "mirage-kv-lwt-riscv" {>= "2.0.0"}
+  "mirage-time-lwt-riscv"
+  "mirage-profile-riscv" {>= "0.8.0"}
 ]
 build: [
   ["dune" "subst"] {pinned}
-  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "build" "-x" "riscv" "-p" "mirage-dns" "-j" jobs]
 ]
 dev-repo: "git+https://github.com/mirage/ocaml-dns.git"
 url {
