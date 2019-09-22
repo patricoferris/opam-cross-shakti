@@ -7,9 +7,9 @@ license: "ISC"
 dev-repo: "git+https://github.com/mirage/mirage-os-shim.git"
 bug-reports: "https://github.com/mirage/mirage-os-shim/issues"
 build: [
-  "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%" "--tests" "false" "--toolchain" "riscv"
-          "--with-mirage-riscv" "true"
+  "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%" "--tests" "false" "--toolchain" "riscv" 
 ]
+
 depends: [
   "ocamlfind" {build}
   "ocamlbuild" {build}
