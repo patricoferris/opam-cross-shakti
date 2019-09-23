@@ -31,6 +31,9 @@ A bundle of useful runtime functions for applications built with MirageOS
 """
 url {
   src:
-    "https://github.com/mirage/mirage/releases/download/v3.5.0/mirage-v3.5.0.tbz"
-  checksum: "md5=4254a635bbf4744bb8a7d1d1cc4011b4"
+    "https://github.com/mirage-shakti-iitm/mirage/archive/v3.5.0+riscv.tar.gz"
+  checksum: [
+    "md5=6eee233d77594e2bc047ef908b30439b"
+    "sha512=652a2720ca92bdae256ba96050ec01b37e2a5c88b9b6648ce88b21f547b899a50827de8ae7524b37487fa23c4befc9145f7180234ad5ce437dcfc54a52fad5be"
+  ]
 }
