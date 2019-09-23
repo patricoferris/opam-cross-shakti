@@ -40,7 +40,7 @@ build: [[
   "ocaml" "pkg/pkg.ml" "build"
           "--dev-pkg" "%{pinned}%"
           "--with-base-unix" "false"
-          "--with-cmdliner" "true" 
+          "--with-cmdliner" "false" 
            "--toolchain" "riscv"]]
 
 install: [["opam-installer" "--prefix=%{prefix}%/riscv-sysroot" "fmt.install"]]
