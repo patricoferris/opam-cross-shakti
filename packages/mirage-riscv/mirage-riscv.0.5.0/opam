@@ -50,7 +50,7 @@ url {
   src:
     "https://github.com/mirage-shakti-iitm/mirage-riscv/archive/v0.5.0.tar.gz"
   checksum: [
-    "md5=381fafed85601aa89ec8957912ab9529"
-    "sha512=94bc85944e2584d2459b650300ce259acf5e8627b0e650b80906b9bf54aad9de5194f62d9018dd3b4b5d12da9439bb43375bc8fca4a6e8d0ee19be81c4510154"
+    "md5=9ded2e09b1692cfb89f57ba041d1eb6a"
+    "sha512=fbbc7c5347ec26289bd1486a70999ea3c22eebb2887a8d3fd5d75505e0a28abdfa99cf27937776a3803ce3ed3078e38bffdc24adc3b9cb4fe95fe02cfc044ca5"
   ]
 }
