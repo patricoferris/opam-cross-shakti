@@ -1,0 +1,41 @@
+opam-version: "2.0"
+maintainer: "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors: [
+  "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+]
+license: "MIT"
+homepage: "https://github.com/mirage/hacl"
+bug-reports: "https://github.com/mirage/hacl/issues"
+dev-repo: "git+https://github.com/mirage/hacl.git"
+doc: "https://mirage.github.io/hacl/doc"
+
+build: [
+ ["dune" "subst"] {pinned}
+ ["dune" "build" "-p" name "-j" jobs]
+ ["dune" "runtest" "-p" name] {with-test}
+]
+
+depends: [
+  "dune" {>= "1.7.0"}
+  "cstruct" {>= "3.5.0"}
+  "eqaf"
+  "ppx_deriving_yojson" {with-test}
+  "yojson" {with-test & >= "1.6.0"}
+  "hex" {with-test}  
+]
+synopsis: "Primitives for SHA-256 taken from Project Everest"
+description: """
+This is an implementation of the SHA-256 algorithm, using code from
+Project Everest.
+
+Cryptographic primitives should not be used in end applications, they are better
+used as part of a cryptographic library.
+"""
+url {
+  src:
+    "https://github.com/mirage-shakti-iitm/hacl-sha2-256/archive/v0.1.tar.gz"
+  checksum: [
+    "md5=488ae3565a9a8913491c299166d837da"
+    "sha512=c2ce63311dda54327bbb926c030989799fde4639959114c2f5c0f38a5398700e7e4b00be67c8468bd40bd9059c07b359975b46f10efbb018eafe1841592199a0"
+  ]
+}
