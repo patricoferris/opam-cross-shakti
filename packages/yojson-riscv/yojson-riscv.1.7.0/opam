@@ -31,4 +31,9 @@ ydump is a pretty-printing command-line program provided with the
 yojson package.
 
 The program atdgen can be used to derive OCaml-JSON serializers and
-deserializers from type definitions."""
+deserializers from type definitions.""" 
+url {
+  src: 
+    "https://github.com/ocaml-community/yojson/releases/download/1.7.0/yojson-1.7.0.tbz"
+  checksum: "sha256=656fc65f794186274f8b961dc38daba9e2de2fc993829291defbda2186812cc6" 
+}
