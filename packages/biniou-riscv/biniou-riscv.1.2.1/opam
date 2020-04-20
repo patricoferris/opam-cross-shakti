@@ -32,7 +32,7 @@ from type definitions.
 
 Biniou format specification: mjambon.github.io/atdgen-doc/biniou-format.txt"""
 depends: [
-  "easy-format"
+  "easy-format-riscv"
   "dune" {>= "1.10"}
   "ocaml" {>= "4.07.0"}
   "ocaml-riscv"

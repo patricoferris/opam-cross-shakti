@@ -15,7 +15,7 @@ depends: [
   "ocaml-riscv" 
   "dune"
   "cppo" {build}
-  "easy-format"
+  "easy-format-riscv"
   "biniou-riscv" {>= "1.2.0"}
   "alcotest" {with-test & >= "0.8.5"}
 ]
