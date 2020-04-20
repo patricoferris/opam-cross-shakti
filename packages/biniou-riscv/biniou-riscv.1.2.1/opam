@@ -2,9 +2,9 @@
 opam-version: "2.0"
 build: [
   ["dune" "subst"] {pinned}
-  ["dune" "build" "-x" "riscv" "-p" name "-j" jobs]
-  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
-  ["dune" "build" "-p" name "@doc"] {with-doc}
+  ["dune" "build" "-x" "riscv" "-p" "biniou" "-j" jobs]
+  ["dune" "runtest" "-p" "biniou" "-j" jobs] {with-test}
+  ["dune" "build" "-p" "biniou" "@doc"] {with-doc}
 ]
 maintainer: ["martin@mjambon.com"]
 authors: ["Martin Jambon"]
