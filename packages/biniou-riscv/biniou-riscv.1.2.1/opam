@@ -38,8 +38,8 @@ depends: [
   "ocaml-riscv"
 ]
 
-src {
-  url: 
+url {
+  src: 
     "https://github.com/ocaml-community/biniou/releases/download/1.2.1/biniou-1.2.1.tbz"
   checksum: "sha256=35546c68b1929a8e6d27a3b39ecd17b38303a0d47e65eb9d1480c2061ea84335" 
 }
