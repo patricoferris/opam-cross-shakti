@@ -26,5 +26,5 @@ remove: [
 ]
 url {
   src:
-    "https://github.com/patricoferris/ocaml/archive/4.11+cross-riscv-test.tar.gz"
+    "https://github.com/patricoferris/ocaml/archive/4.11+cross-riscv.tar.gz"
 }
