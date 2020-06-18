@@ -1,0 +1,30 @@
+opam-version: "2.0"
+name: "ocaml-riscv"
+version: "4.11.0"
+synopsis: "OCaml to RISC-V Cross Compiler."
+maintainer: "Sai Venkata Krishnan <saiganesha5.svkv@gmail.com>"
+authors: "KC Sivaramakrishnan <kc@kcsrk.info>"
+license: "LGPL v2.1"
+homepage: "https://github.com/patricoferris/ocaml/tree/4.11+cross-riscv"
+substs: [ "riscv.conf" ]
+depends: [ 
+	"ocaml" {= "4.11.0"} 
+	"ocamlfind"
+]
+build: [
+	["sh" "./configure" "--host=riscv64-unknown-linux-gnu" "--prefix=%{prefix}%/riscv-sysroot" "--disable-ocamldoc" "--disable-debugger" "--disable-ocamltest" "--with-target-bindir=%{prefix}%/riscv-sysroot/bin"]
+	[make "-j%{jobs}%" "world"]
+	[make "-j%{jobs}%" "opt"]
+]
+install: [
+	["cp" "%{prefix}%/bin/ocamlrun" "runtime"]
+	[make "install"]
+	["sh" "./install.sh"]
+]
+remove: [
+    [ "rm" "-rf" "%{prefix}%/riscv-sysroot" ]
+]
+url {
+  src:
+    "https://github.com/patricoferris/ocaml/archive/4.11+cross-riscv-test.tar.gz"
+}
